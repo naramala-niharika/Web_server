@@ -18,6 +18,21 @@ Serving the HTML pages.
 ### Step 5:
 
 Testing the webserver
-## PROGRAM:
+## PROGRAM:#Program to find then solution for the given linear equations.
+#Developed by: Naramala Niharika
+
+#RegisterNumber:21500912
+
+import numpy as np
+
+A=np.array ([[5, -3, -10],[2, 2, -3],[-3, -1, 5]])
+
+B=np.array ([-9, 4, -1])
+
+sol=np.linalg.solve(A,B)
+
+print(sol)
+
 ## OUTPUT:
+![output]()
 ## RESULT:
