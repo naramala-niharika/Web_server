@@ -34,5 +34,5 @@ sol=np.linalg.solve(A,B)
 print(sol)
 
 ## OUTPUT:
-![output]()
+![output](https://github.com/naramala-niharika/Web_server/blob/main/Screenshot%20(14).png?raw=true)
 ## RESULT:
