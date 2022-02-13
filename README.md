@@ -54,6 +54,6 @@ httpd.serve_forever()
 
 
 ## OUTPUT:
-![output]()
+![output](https://github.com/naramala-niharika/Web_server/blob/main/y1.PNG?raw=true)
 ## RESULT:
-
+Thus the program is executed
