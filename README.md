@@ -18,21 +18,42 @@ Serving the HTML pages.
 ### Step 5:
 
 Testing the webserver
-## PROGRAM:#Program to find then solution for the given linear equations.
-#Developed by: Naramala Niharika
+## PROGRAM:
+<!DOCTYPE html>
+<html>
+<head>
+<title>My webserver</title>
+</head>
+<body>
+<h1>Name:Niharika Naramala</h1>
+<h2>21500912</h2>
+<h2>Artificial Intelligence and Machine Learning</h2>
+</body>
+</html>
+"""
+class myhandler(BaseHTTPRequestHandler):
+ def do_GET(self):
 
-#RegisterNumber:21500912
+        print("request received")
 
-import numpy as np
+        self.send_response(200)
 
-A=np.array ([[5, -3, -10],[2, 2, -3],[-3, -1, 5]])
+        self.send_header('content-type', 'text/html; charset=utf-8')
 
-B=np.array ([-9, 4, -1])
+        self.end_headers()
 
-sol=np.linalg.solve(A,B)
+        self.wfile.write(content.encode())
 
-print(sol)
+server_address = ('',8080)
+
+httpd = HTTPServer(server_address,myhandler)
+
+print("my webserver is running...")
+
+httpd.serve_forever()
+
 
 ## OUTPUT:
-![output](https://github.com/naramala-niharika/Web_server/blob/main/Screenshot%20(14).png?raw=true)
+![output]()
 ## RESULT:
+
